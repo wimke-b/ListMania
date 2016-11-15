@@ -18,10 +18,16 @@ function displayList()
     }
 }
 
-function add ()
+function addTask ()
 {
-    
+    //Add in the Tasks from the input field in our HTML File
+    //Display the latest list of tasks
+    displayList();
 }
+
+displayList();
+document.getElementById("Add").addEventListener("click", addTask);
+                                                
 function remove ()
 {
     
